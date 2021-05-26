@@ -48,18 +48,18 @@ etc.
       (propertize (concat (mapconcat
                            #'number-to-string
                            numbering ".") " | " )
-                  'face `(:family "Roboto Condensed"
+                  'face `(:family "Victor Mono"
                           :height 250
                           :foreground ,nano-color-faded))
     (propertize (concat (mapconcat
                          #'number-to-string
                          numbering ".") " — " )
-                'face `(:family "Roboto Condensed"
+                'face `(:family "Victor Mono"
                         :foreground ,nano-color-faded))))
 
 ;; Specific face for headline stars
 (font-lock-add-keywords 'writer-mode
-             '(("^*+ " 0 `(:family "Roboto Mono"
+             '(("^*+ " 0 `(:family "Victor Mono"
                            :height 140
                            :foreground ,nano-color-faded) prepend)
                ) 'append)
@@ -98,16 +98,16 @@ etc.
   ;; Faces
   (face-remap-add-relative 'org-level-1
                            :overline nano-color-subtle
-                           :family "Roboto" :height 180)
+                           :family "Victor Mono" :height 180)
   (face-remap-add-relative 'org-level-2
-                           :family "Roboto" :height 160)
+                           :family "Victor Mono" :height 160)
   (face-remap-add-relative 'org-level-3
-                           :family "Roboto" :height 150)
+                           :family "Victor Mono" :height 150)
   (face-remap-add-relative 'org-document-info
                            :inherit 'nano-face-faded)
   (face-remap-add-relative 'org-document-title
                            :foreground nano-color-foreground
-                           :family "Roboto Slab" 
+                           :family "Victor Mono"
                            :height 200
                            :weight 'medium)
   ;; hide title / author ... keywords
